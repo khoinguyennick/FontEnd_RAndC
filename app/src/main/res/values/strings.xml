@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+
+    <string-array name="genderList">
+        <item>Female</item>
+        <item>Male</item>
+        <item>Other :v</item>
+    </string-array>
+
+    
+
+</resources>

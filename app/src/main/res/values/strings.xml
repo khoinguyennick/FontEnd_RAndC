@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HelloWorld</string>
+    <string name="app_name">JobsIn</string>
 
     <string-array name="genderList">
         <item>Female</item>
@@ -7,6 +7,5 @@
         <item>Other :v</item>
     </string-array>
 
-    
 
 </resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:background="@color/itemColor"
+        android:id="@+id/JobsItems">
+        <ImageView android:layout_width="0dp"
+            android:id="@+id/imgJobLogoItem"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/icons8search96"
+            />
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6">
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtJobNameItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Job 1 angularJS"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </TableRow>
+            <TableRow>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/location_icon"
+                    />
+                <TextView
+                    android:id="@+id/txtLocationItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:layout_gravity="center"
+                    android:text="hem 27 nguyen binh khiem"/>
+            </TableRow>
+            <TableRow>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:background="@drawable/dollar"
+                    />
+                <TextView
+                    android:id="@+id/txtMinSalary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:layout_gravity="center"
+                    android:text="20 000 000 vnd"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_gravity="center"
+                    android:text="-"/>
+                <TextView
+                    android:id="@+id/txtMaxSalary"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:layout_gravity="center"
+                    android:text="20 000 000 vnd"/>
+            </TableRow>
+        </TableLayout>
+    </TableRow>
+</RelativeLayout>

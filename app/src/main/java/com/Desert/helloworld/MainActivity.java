@@ -1,13 +1,12 @@
 package com.Desert.helloworld;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+
 
     private ImageView logoImageView;
     private ImageView jobImageView;
@@ -15,9 +14,17 @@ public class MainActivity extends AppCompatActivity {
     private boolean loggedIn;
 
     @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
+    }
+
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         //check login
         loggedIn = Boolean.valueOf(UtilsSession.readSharedSetting(MainActivity.this, "myLogin", "false"));
@@ -58,4 +65,5 @@ public class MainActivity extends AppCompatActivity {
 //        setContentView(R.layout.cvlayout);
 //    }
 
-}
+    }
+

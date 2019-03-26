@@ -1,5 +1,6 @@
 package com.Desert.helloworld;
 
+import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         profileImageView = findViewById(R.id.profileImageView);
 
         profileImageView.setOnClickListener(view -> gotoProfile());
+        jobImageView.setOnClickListener(view -> gotoJobsList());
 //        this.logoImageView.setOnClickListener(view ->gotoCvLayout());
     }
 
@@ -38,6 +40,11 @@ public class MainActivity extends AppCompatActivity {
         } else {
 
         }
+    }
+
+    private void gotoJobsList(){
+        Intent intent = new Intent(MainActivity.this,JobsListActivity.class);
+        startActivity(intent);
     }
 
 //    private void logout(){

@@ -22,12 +22,6 @@
             android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".JobsListActivity"
             android:parentActivityName=".MainActivity"></activity>
-=======
-
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="MainActivity" />
->>>>>>> origin/master
     </application>
 
 </manifest>

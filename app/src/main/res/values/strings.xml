@@ -1,10 +1,6 @@
 <resources>
-<<<<<<< HEAD
-    <string name="app_name">HelloWorld</string>
+    <string name="app_name">Jobs In</string>
     <string name="jos_list">List Jobs</string>
-=======
-    <string name="app_name">JobsIn</string>
->>>>>>> origin/master
 
     <string-array name="genderList">
         <item>Female</item>

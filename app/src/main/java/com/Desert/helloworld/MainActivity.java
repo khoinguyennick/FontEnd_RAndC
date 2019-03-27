@@ -45,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
             introIntent.putExtra("myLogin", loggedIn);
             startActivity(introIntent);
         } else {
-
+            Intent intent = new Intent(MainActivity.this,ProfileActivity.class);
+            startActivity(intent);
         }
     }
 

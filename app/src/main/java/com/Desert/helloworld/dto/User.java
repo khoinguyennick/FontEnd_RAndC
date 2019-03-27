@@ -1,6 +1,8 @@
 package com.Desert.helloworld.dto;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
     private String username, password, fullname, sex, email, address, phone;
 
     public String getUsername() {

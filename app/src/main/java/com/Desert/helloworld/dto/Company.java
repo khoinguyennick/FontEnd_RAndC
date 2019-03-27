@@ -1,6 +1,8 @@
 package com.Desert.helloworld.dto;
 
-public class Company {
+import java.io.Serializable;
+
+public class Company implements Serializable {
     private String name, phone, address, email;
     private int image;
 

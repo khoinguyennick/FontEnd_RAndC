@@ -1,8 +1,10 @@
 package com.Desert.helloworld.dto;
 
-public class Job {
+import java.io.Serializable;
+
+public class Job implements Serializable {
     private String name;
-    private String quantity;
+    private int quantity;
     private String required;
 
     public Job(String name, String salary, Company company) {
@@ -30,11 +32,11 @@ public class Job {
         this.name = name;
     }
 
-    public String getQuantity() {
+    public int getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(String quantity) {
+    public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 

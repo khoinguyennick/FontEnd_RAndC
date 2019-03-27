@@ -3,26 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".JobDetailActivity">
+    android:layout_margin="10dp">
     <TableRow android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
         <ImageView android:layout_width="0dp"
             android:contentDescription="image profile"
             android:layout_margin="30dp"
-            android:layout_height="@android:dimen/thumbnail_width"
+            android:layout_height="120dp"
             android:layout_weight="3"
-            android:background="@drawable/man"/>
+            android:id="@+id/imgCompany"/>
         <TextView android:layout_width="0dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="60dp"
             android:textSize="30sp"
             android:textColor="@color/colorPrimary"
             android:layout_height="wrap_content"
             android:layout_weight="6"
             android:text="Job Name"
-            android:id="@+id/txtJobName"/>
+            android:id="@+id/txtJD_JobName"/>
     </TableRow>
     <!--job detail-->
-    <TableRow>
+    <TableRow android:layout_marginTop="10dp">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,7 +40,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="TMA solution .Inc"/>
+                android:text="TMA solution .Inc"
+                android:id="@+id/txtJD_CompanyName" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -58,12 +60,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="20 hour ago"
+                android:id="@+id/txtJD_Time"
                 android:textColor="@color/colorPrimary"/>
         </LinearLayout>
     </TableRow>
     <!--end job detail-->
     <!--salary and slot-->
-    <TableRow>
+    <TableRow android:layout_marginTop="10dp">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -80,7 +83,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:text="20 000 000 VND"/>
+                android:text="20 000 000 VND"
+                android:id="@+id/txtJD_Salary"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="wrap_content"
@@ -95,12 +99,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:text="5 slot"
-                android:textColor="@color/colorPrimary"/>
+                android:textColor="@color/colorPrimary"
+                android:id="@+id/txtJD_Quantity"/>
         </LinearLayout>
     </TableRow>
     <!--end of salary and slot-->
     <!--description-->
-    <TableRow>
+    <TableRow android:layout_marginTop="10dp">
         <ImageView android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
@@ -109,10 +114,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="7"
-            android:text="2 years experience required"/>
+            android:text="2 years experience required"
+            android:id="@+id/txtJD_Required"/>
     </TableRow>
     <!--phone-->
-    <TableRow>
+    <TableRow android:layout_marginTop="10dp">
         <ImageView android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
@@ -122,10 +128,11 @@
             android:layout_height="wrap_content"
             android:layout_weight="7"
             android:layout_gravity="center"
-            android:text="0123456789" />
+            android:text="0123456789"
+            android:id="@+id/txtJD_CompanyPhone"/>
     </TableRow>
     <!--email-->
-    <TableRow>
+    <TableRow android:layout_marginTop="10dp">
         <ImageView android:layout_width="0dp"
             android:layout_height="30dp"
             android:layout_weight="1"
@@ -135,26 +142,12 @@
             android:layout_height="wrap_content"
             android:layout_weight="7"
             android:layout_gravity="center"
-            android:text="email: sdkke@gmailce.come" />
+            android:text="email: sdkke@gmailce.come"
+            android:id="@+id/txtJD_CompanyEmail"/>
     </TableRow>
     <TableRow android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <RelativeLayout
-            android:orientation="horizontal"
-            android:gravity="center_vertical"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RatingBar
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:outlineAmbientShadowColor="@color/colorPrimary"
-                android:outlineSpotShadowColor="@color/colorPrimary"
-                android:layout_centerInParent="true" />
-        </RelativeLayout>
-    </TableRow>
-    <TableRow android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp">
         <RelativeLayout
             android:orientation="horizontal"
             android:gravity="center_vertical"
@@ -167,7 +160,8 @@
                 android:outlineAmbientShadowColor="@color/colorPrimary"
                 android:outlineSpotShadowColor="@color/colorPrimary"
                 android:layout_centerInParent="true"
-                android:text="apply"/>
+                android:text="apply"
+                android:id="@+id/btnApply"/>
         </RelativeLayout>
     </TableRow>
 </TableLayout>

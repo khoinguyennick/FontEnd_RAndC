@@ -27,6 +27,8 @@
         <activity android:name=".ProfileActivity"></activity>
         <activity android:name=".JobDetailActivity"
             android:parentActivityName=".JobsListActivity"></activity>
+        <activity android:name=".CVDetailActivity"
+            android:parentActivityName=".ProfileActivity"></activity>
     </application>
 
 </manifest>

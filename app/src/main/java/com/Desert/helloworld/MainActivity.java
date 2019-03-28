@@ -55,13 +55,6 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-//    private void logout(){
-//        UtilsSession.saveSharedSetting(MainActivity.this,"myLogin", "false");
-//        UtilsSession.sharedPrefesSave(getApplicationContext(),"");
-//        loggedIn = false;
-//        Toast.makeText(getApplicationContext(),"You are logged out",Toast.LENGTH_LONG).show();
-//    }
-
 //    private void gotoCvLayout(){
 //        setContentView(R.layout.cvlayout);
 //    }
